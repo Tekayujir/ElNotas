@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">El Notas</string>
+    <string name="title_activity_notas">NotasActivity</string>
+    <string name="title_notes">Notas</string>
+    <string name="title_fav">Favoritas</string>
+    <string name="title_user_profile">Mi Perfil</string>
+</resources>
