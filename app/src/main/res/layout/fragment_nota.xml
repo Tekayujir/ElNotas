@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="4dp">
+    android:layout_margin="10dp">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -14,41 +14,40 @@
         <TextView
             android:id="@+id/textViewTitulo"
             android:layout_width="0dp"
-            android:layout_height="22dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:ellipsize="end"
-            android:maxLines="1"
             android:text="TextView"
             android:textColor="#000000"
-            app:layout_constraintEnd_toStartOf="@+id/imageViewNoFav"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewContenido"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textViewContenido"
             android:layout_width="0dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
             app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
 
-        <ImageView
-            android:id="@+id/imageViewNoFav"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/textViewContenido"
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="39dp"
+            android:layout_height="43dp"
+            android:backgroundTint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/ic_star_border_black_24dp" />
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
